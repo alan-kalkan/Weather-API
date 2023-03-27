@@ -1,0 +1,64 @@
+body {
+    background-image: linear-gradient(to right bottom, #8360c3, #2ebf91);
+}
+
+h1{
+    font-family:'Nanum Gothic', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    font-family:'Nanum Gothic', sans-serif;
+    font-size: 23,5px;
+}
+.main{
+    width: 500px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow:inset -70px -100px 30px rgba(19, 192, 137, 0.895), inset 1px 1.5px 300px rgba(222, 222, 222, 0.568);
+    border-radius: 100px 100px 100px 10;
+    opacity: 70%;
+  }
+
+#name {
+    width: 100%;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(112, 18, 18);
+
+
+}
+#temp {
+    width: 100%;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(32, 175, 16);
+}
+#ressenti{
+    width: 100%;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(56, 8, 161);
+}
+
+#humidity{
+    width: 100%;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(202, 9, 147);
+}
+
+
+
+#nuage {
+    opacity: 0.9;
+    z-index: 0;
+}
