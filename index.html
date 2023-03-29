@@ -9,25 +9,44 @@
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <label for="city">Entrez le nom de la ville: </label>
-    <input type="text" id="city" name="city">
-    <button id="btn">Rechercher</button>
-
-        <div class="main">
-        <div id="name"></div>
-        <div id="temp"></div>
-        <div id="ressenti"></div>
-        <div id="humidity"></div>
-       
-        
+   <div class="centrebutton">
+    <input class="css-input" type="text" placeholder="Ville" id="in">
+    <button class='mybutton' type="button" onclick="getValue();">Rechercher</button>
     </div>
+        <div class="main" id="animmain">
+            <div class="mainname">
+                <img id="imgname" src="png/plans.png">
+                <div class="min-height" id="name"></div>
+            </div>
+            <div class="maintemp">
+                <img id="imgname" src="png/002-temperature.png">
+                <div class="min-height" id="temp"></div>
+            </div>
 
-<marquee> <img src="image/rain-png-34472.png" id="nuage"> </marquee>
+            <div class="maintempmin">
+                <img id="imgtempmini" src="png/minus.png">
+                <div class="min-height" id="tempmin"></div>
+            </div>
+        
+            <div class="maintempmax">
+                <img id="imgmin" src="png/plus.png">
+                <div class="min-height" id="tempmax"></div>
+            </div>
+         
+            <div class="mainhumidity">
+                <img id="imghumidity" src="png/003-humidity.png">
+                <div class="min-height" id="humidity"></div>
+            </div>
+            
+        <div class="mainimg">
+            <img class="iconn" id="icon" src=""></img>
+            </div>
+        </div>
+        
+        
 
 
 </body>
