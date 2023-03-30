@@ -7,6 +7,7 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q="+ cityInput +"&appid=0
 return data;
 })
     .then((data) => {
+        console.log(data)
         if (data.name == undefined ) {
             alert('Veuillez entrer une ville valide');
             document.getElementById("in").value = ""
@@ -26,6 +27,10 @@ return data;
         divHumid.appendChild(dataHumid)*/
 
         document.getElementById("icon").src = "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
+        document.body.className = data.weather[0].main.toLowerCase()
+        document.getElementById('animmain').classList.add(data.weather[0].main.toLowerCase())
+        console.log(data.weather[0].main.toLowerCase())
+        //document.getElementsById("animmain").className = data.weather[0].main.toLowerCase();
 })
 }
 
